@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: omsompret/build:v1
+    steps:
+      - checkout
+      - run: lscpu
+      - run: htop
